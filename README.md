@@ -13,11 +13,11 @@ The format of FSNS said in this [paper](https://arxiv.org/pdf/1702.03970.pdf)
 
 You need to do three steps:
 
-The first step is to create a dictionary that matches your own text label, such as [dic.txt](https://github.com/A-bone1/FSNS-tfrecord-generate/blob/master/dic.txt). 
+1. The first step is to create a dictionary that matches your own text label, such as [dic.txt](https://github.com/A-bone1/FSNS-tfrecord-generate/blob/master/dic.txt). 
 
-The second step is to place the pictures and text you need to generate under / data,
+2. The second step is to place the pictures and text you need to generate under / data,
 
-The third step is to generate your tfrecord by
+3. The third step is to generate your tfrecord by
 ```
 python generate_tfrecord_JPG.py
 
@@ -27,3 +27,6 @@ or
 ```
 python generate_tfrecord_PNG.py
 ```
+The python files 
+  1. read every image-txt pairs in `data` folder and its subfolders, 
+  2. resize to 600x150 `numpy` array
